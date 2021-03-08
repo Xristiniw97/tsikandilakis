@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lefteris Tsikandilakis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+      <!-- header  -->
+      <header class="header fixed-top">
+        <div class="header__leftSide d-flex flex-row">
+            <a href="index.html" class="logo1">
+                <div class="logo1__bigText">
+                   LTS  
+                </div>
+                <div class="logo1__smallText">
+                    ARCHITECTS
+                </div>
+            </a>
+            <a href="index.html"><img src="img/logo-footer.png" alt="Logo" class="header__logo"> </a>
+        </div>
+        <div class="header__rightSide d-flex flex-row">
+            <div class="header__startProject">
+                <a href="#" class="startProjectBtn">START A PROJECT</a>
+            </div>
+            <div class="header__languages">
+                <div class="languagesDrop dropdown">
+                    <button class="langButton dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href=# title=Ελληνικά class=dropdown-item>ΕΛ</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="header__menu">
+                <button id="burger" class="open-main-nav">
+                    <span class="burger"></span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li>
+                
+                            <a href="https://fonts.google.com/specimen/Manrope?preview.text_type=custom&sidebar.open=true&selection.family=Manrope:wght@200;300;400;500;600;700;800"><div class="number">01</div><div class="text">ABOUT<span>who we are what we believe</span></div></a>
+                            
+                        </li>
+                        <li>
+                            <a href="#"><div class="number">02</div><div class="text">SERVICES<span>what we do</span></div></a>
+                            
+                        </li>
+                        <li>
+                            <a href="project.html"><div class="number">03</div><div class="text">PROJECTS<span>an overview of our work</span></div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div class="number">04</div><div class="text">TESTIMONIALS</div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div class="number">05</div><div class="text">NEWS</div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div class="number">06</div><div class="text">CONTACT</div></a>
+                        </li>
+                    </ul>
+                </nav>
+          
+            </div>
+        </div>
+    </header>
+
+    <!-- projectsPage  -->
+    <section class="projectsPage padding-distances mt-5">
+        <div class="text-left">
+          <h1>
+              <span>PROJECTS</span>
+              OUR WORK
+          </h1>
+        </div>
+  
+
+        <div class="firstcontainer my-5" id="text-holder">
+          <div class="filterDiv all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt SHOW ALL</div>
+          <div class="filterDiv pharmacies">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt pharamacies</div>
+          <div class="filterDiv hotelbar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt hotelbar</div>
+          <div class="filterDiv industrialdesign">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt industrialdesign</div>
+          <div class="filterDiv residental">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt residental</div>
+          <div class="filterDiv industrialcommercial">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt industrialcommercial</div>
+          <div class="filterDiv shopsofficies">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt shopsofficies</div>
+          <div class="filterDiv publicsector">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt publicsector</div>
+         </div>
+  
+         <div class="filterCategories">
+          FILTER CATEGORIES
+          </div>
+         
+         
+         <div id="myBtnContainer">
+           <button class="btn filterBtn active" onclick="filterSelection('all')"> SHOW ALL</button>
+           <button class="btn filterBtn " onclick="filterSelection('pharmacies')"> PHARMACIES</button>
+           <button class="btn filterBtn" onclick="filterSelection('hotelbar')">HOTEL-BAR</button>
+           <button class="btn filterBtn" onclick="filterSelection('industrialdesign')"> INDUSTRIAL-DESIGN</button>
+           <button class="btn filterBtn" onclick="filterSelection('residental')"> RESIDENTIAL</button>
+           <button class="btn filterBtn" onclick="filterSelection('industrialcommercial')"> INDUSTRIAL-COMMERCIAL</button>
+           <button class="btn filterBtn" onclick="filterSelection('shopsofficies')"> SHOPS - OFFICIES</button>
+           <button class="btn filterBtn" onclick="filterSelection('publicsector')"> PUBLIC SECTOR</button>
+         </div>
+         
+         <div class="filterDiv pharmacies">
+             <section class="whatWeDo margin-distances">
+               <div class="grid">
+                   <div class="grid-sizer"></div>
+                   <div class="grid-item bigImg">
+                       <figure class="figure">
+                           <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                           <figcaption class="figure-caption">2018 | ACCRA | GHANA1</figcaption>
+                       </figure>
+                   </div>
+                   <div class="grid-item" style="width: 50%;">
+                       <div>
+                           <figure class="figure">
+                               <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE1</figcaption>
+                           </figure>
+                           <figure class="figure figureMini">
+                               <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2009 | HERAKLION | CRETE1</figcaption>
+                           </figure>
+                           <figure class="figure figureMini" style="float: right;">
+                               <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2012 | HERAKLION | CRETE1</figcaption>
+                           </figure>
+         
+                       </div>
+                   </div>
+                   <div class="grid-item bigImg">
+                       <figure class="figure" style="float: right;">
+                           <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                           <figcaption class="figure-caption">2018 | ACCRA | GHANA1</figcaption>
+                       </figure>
+                   </div> 
+                   <div class="grid-item mt-3">
+                       <figure class="figure">
+                           <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                           <figcaption class="figure-caption">2005 | HERAKLION | CRETE1</figcaption>
+                       </figure>
+                       
+                   </div>
+                   <div class="grid-item">
+                       <figure class="figure">
+                           <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                           <figcaption class="figure-caption">2013 | HERAKLION | CRETE1</figcaption>
+                       </figure>
+                   </div>
+                   <div class="grid-item">
+                       <figure class="figure">
+                           <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                           <figcaption class="figure-caption">2017 | HERAKLION | CRETE1</figcaption>
+                       </figure>
+                   </div>
+                   <div class="grid-item">
+                     <figure class="figure">
+                         <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                         <figcaption class="figure-caption">2017 | HERAKLION | CRETE1</figcaption>
+                     </figure>
+                   </div>
+               </div>
+               </section>
+             </div>
+         
+             <div class="filterDiv hotelbar">
+                 <section class="whatWeDo margin-distances">
+                   <div class="grid">
+                       <div class="grid-sizer"></div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                              <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA2</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item" style="width: 50%;">
+                           <div>
+                               <figure class="figure">
+                                   <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2017 | HERAKLION | CRETE2</figcaption>
+                               </figure>
+                               <figure class="figure figureMini">
+                                   <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2009 | HERAKLION | CRETE2</figcaption>
+                               </figure>
+                               <figure class="figure figureMini" style="float: right;">
+                                   <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2012 | HERAKLION | CRETE2</figcaption>
+                               </figure>
+             
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure" style="float: right;">
+                              <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA2</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item mt-3">
+                           <figure class="figure">
+                                <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2005 | HERAKLION | CRETE2</figcaption>
+                           </figure>
+                           
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2013 | HERAKLION | CRETE2</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                               <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE2</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                         <figure class="figure">
+                              <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                             <figcaption class="figure-caption">2017 | HERAKLION | CRETE2</figcaption>
+                         </figure>
+                       </div>
+                   </div>
+                   </section>
+             </div>
+         
+             <div class="filterDiv industrialdesign">
+                 <section class="whatWeDo margin-distances">
+                   <div class="grid">
+                       <div class="grid-sizer"></div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                              <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA3</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item" style="width: 50%;">
+                           <div>
+                               <figure class="figure">
+                                   <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2017 | HERAKLION | CRETE3</figcaption>
+                               </figure>
+                               <figure class="figure figureMini">
+                                   <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2009 | HERAKLION | CRETE3</figcaption>
+                               </figure>
+                               <figure class="figure figureMini" style="float: right;">
+                                   <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2012 | HERAKLION | CRETE3</figcaption>
+                               </figure>
+             
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure" style="float: right;">
+                              <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA3</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item mt-3">
+                           <figure class="figure">
+                                <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2005 | HERAKLION | CRETE3</figcaption>
+                           </figure>
+                           
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2013 | HERAKLION | CRETE3</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                               <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE3</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                         <figure class="figure">
+                              <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                             <figcaption class="figure-caption">2017 | HERAKLION | CRETE3</figcaption>
+                         </figure>
+                       </div>
+                   </div>
+                   </section>
+             </div>
+         
+         
+             <div class="filterDiv residental">
+                 <section class="whatWeDo margin-distances">
+                   <div class="grid">
+                       <div class="grid-sizer"></div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA4</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item" style="width: 50%;">
+                           <div>
+                               <figure class="figure">
+                                   <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2017 | HERAKLION | CRETE4</figcaption>
+                               </figure>
+                               <figure class="figure figureMini">
+                                   <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2009 | HERAKLION | CRETE4</figcaption>
+                               </figure>
+                               <figure class="figure figureMini" style="float: right;">
+                                   <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2012 | HERAKLION | CRETE4</figcaption>
+                               </figure>
+             
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure" style="float: right;">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA4</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item mt-3">
+                           <figure class="figure">
+                                <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2005 | HERAKLION | CRETE4</figcaption>
+                           </figure>
+                           
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2013 | HERAKLION | CRETE4</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                               <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE4</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                         <figure class="figure">
+                              <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                             <figcaption class="figure-caption">2017 | HERAKLION | CRETE4</figcaption>
+                         </figure>
+                       </div>
+                   </div>
+                   </section>
+             </div>
+         
+             <div class="filterDiv industrialcommercial">
+                 <section class="whatWeDo margin-distances">
+                   <div class="grid">
+                       <div class="grid-sizer"></div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA5</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item" style="width: 50%;">
+                           <div>
+                               <figure class="figure">
+                                   <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2017 | HERAKLION | CRETE5</figcaption>
+                               </figure>
+                               <figure class="figure figureMini">
+                                   <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2009 | HERAKLION | CRETE5</figcaption>
+                               </figure>
+                               <figure class="figure figureMini" style="float: right;">
+                                   <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2012 | HERAKLION | CRETE5</figcaption>
+                               </figure>
+             
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure" style="float: right;">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA5</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item mt-3">
+                           <figure class="figure">
+                                <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2005 | HERAKLION | CRETE5</figcaption>
+                           </figure>
+                           
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2013 | HERAKLION | CRETE5</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                               <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE5</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                         <figure class="figure">
+                              <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                             <figcaption class="figure-caption">2017 | HERAKLION | CRETE5</figcaption>
+                         </figure>
+                       </div>
+                   </div>
+                   </section>
+             </div>
+         
+             <div class="filterDiv shopsofficies">
+                 <section class="whatWeDo margin-distances">
+                   <div class="grid">
+                       <div class="grid-sizer"></div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA6</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item" style="width: 50%;">
+                           <div>
+                               <figure class="figure">
+                                   <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2017 | HERAKLION | CRETE6</figcaption>
+                               </figure>
+                               <figure class="figure figureMini">
+                                   <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2009 | HERAKLION | CRETE6</figcaption>
+                               </figure>
+                               <figure class="figure figureMini" style="float: right;">
+                                   <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2012 | HERAKLION | CRETE6</figcaption>
+                               </figure>
+             
+                           </div>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure" style="float: right;">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA6</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item mt-3">
+                           <figure class="figure">
+                                <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2005 | HERAKLION | CRETE6</figcaption>
+                           </figure>
+                           
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2013 | HERAKLION | CRETE6</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                               <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE6</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                         <figure class="figure">
+                              <a href="img/mansory-4.jpg"  class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                             <figcaption class="figure-caption">2017 | HERAKLION | CRETE6</figcaption>
+                         </figure>
+                       </div>
+                   </div>
+                   </section>
+             </div>
+         
+             <div class="filterDiv publicsector">
+                 <section class="whatWeDo margin-distances">
+                   <div class="grid">
+                       <div class="grid-sizer"></div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA7</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item" style="width: 50%;">
+                           <div>
+                               <figure class="figure">
+                                   <a href="img/mansory-2.jpg" class="fancy"><img src="img/mansory-2.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2017 | HERAKLION | CRETE7</figcaption>
+                               </figure>
+                               <figure class="figure figureMini">
+                                   <a href="img/mansory-3.jpg" class="fancy"><img src="img/mansory-3.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2009 | HERAKLION | CRETE7</figcaption>
+                               </figure>
+                               <figure class="figure figureMini" style="float: right;">
+                                   <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                                   <figcaption class="figure-caption">2012 | HERAKLION | CRETE7</figcaption>
+                               </figure>
+             
+                           </div>
+                       </div>
+                       <div class="grid-item ">
+                           <figure class="figure" style="float: right;">
+                                <a href="img/mansory-1.jpg" class="fancy"><img src="img/mansory-1.jpg" class="img-fluid "/></a>
+                               <figcaption class="figure-caption">2018 | ACCRA | GHANA7</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item mt-3">
+                           <figure class="figure">
+                                <a href="img/mansory-4.jpg" class="fancy"><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2005 | HERAKLION | CRETE7</figcaption>
+                           </figure>
+                           
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                                <a href="img/mansory-5.jpg" class="fancy"><img src="img/mansory-5.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2013 | HERAKLION | CRETE7</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                           <figure class="figure">
+                               <a href="img/mansory-6.jpg" class="fancy"><img src="img/mansory-6.jpg" class="img-fluid"/></a>
+                               <figcaption class="figure-caption">2017 | HERAKLION | CRETE7</figcaption>
+                           </figure>
+                       </div>
+                       <div class="grid-item">
+                         <figure class="figure">
+                              <a href="img/mansory-4.jpg" class="fancy" ><img src="img/mansory-4.jpg" class="img-fluid"/></a>
+                             <figcaption class="figure-caption">2017 | HERAKLION | CRETE7</figcaption>
+                         </figure>
+                       </div>
+                   </div>
+                   </section>
+             </div>
+    </section>
+  
+
+    <div class="text-center projectBtnSpace padding-distances">
+        <a href="#" class="projectBtn display-flex flex-row m-auto">
+            Ready to start a project? <img src="img/right-arrow2-black.svg" alt="Right Arrow">
+        </a>
+    </div>
+        
+         <!-- BOTTOMMENU  -->
+       <div class="bottomMenu container">
+        <ul class="bottomMenu__ul text-center">
+            <li class="bottomMenu__ul__li"><a href="#">COMPANY</a></li>
+            <li class="bottomMenu__ul__li"><a href="#">SERVICES</a></li>
+            <li class="bottomMenu__ul__li"><a href="projects.html">PROJECTS</a></li>
+            <li class="bottomMenu__ul__li"><a href="#">NEWS</a></li>
+            <li class="bottomMenu__ul__li"><a href="#">CONTACT</a></li>
+            <li class="bottomMenu__ul__li"><a href="#">SITEMAP</a></li>
+            <li class="bottomMenu__ul__li"><a href="#">PRIVACY POLICY</a></li>
+            <li class="bottomMenu__ul__li"><a href="#">COOKIE POLICY</a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="toTop clearfix"> <a class="scrollup" href="#" style="display: inline;" title="scroll to top"></a></div>   
+      <!-- footer  -->
+      <footer class="footer padding-distances">
+        <div class="text-center">
+            <div class="h1">
+                <span>CONTACT</span>
+                GET IN TOUCH
+            </div>
+        </div>
+        <div class="footer__infoDetails">
+            <div class="row">
+                <div class="col-lg-4  display-flex mb-5">
+                    <div class="footer__infoDetails__icon">
+                        <img src="img/placeholder.png" alt="Adress">
+                    </div>
+                    <div class="footer__infoDetails__text text-center mt-5">
+                        <h3>ADDRESS</h3>
+                        <p>8 Patros Antoniou <br>
+                         T.K. 712 02 Heraklion, Crete</p>
+                    </div>
+                </div>
+                <div class="col-lg-4  display-flex mb-5">
+                    <div class="footer__infoDetails__icon">
+                        <img src="img/customer-service.png" alt="Phone Email">
+                    </div>
+                    <div class="footer__infoDetails__text text-center mt-5">
+                        <h3>PHONE-MAIL</h3>
+                        <p>T: +30 2810 341 617, <br> +30 6972997197 <br>
+                        F: +30 2810 227 666 <br>
+                        E-mail: <a href="#">mailbox@tsikandilakis.gr</a> </p>
+                    </div>
+                </div>
+                <div class="col-lg-4  display-flex mb-5">
+                    <div class="footer__infoDetails__icon">
+                        <img src="img/envelope.png" alt="Newletter">
+                    </div>
+                    <div class="footer__infoDetails__text text-center mt-5">
+                        <h3>NEWSLETTER</h3>
+                        <p>Subscribe to our newsletter </p>
+                        <form class="mt-2 footer__infoDetails__newsletterForm display-flex">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Fullname" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E-mail Address" autocomplete="off">
+                            </div>
+                            <a href="#" class="btn" type="submit"><img src="img/right-arrow2.svg" alt="Right arrow" class="mr-4">SEND</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__socialIcons text-center">
+            <a href="#"><img src="img/facebook.svg" alt="Facebook Logo"></a>
+            <a href="#"><img src="img/instagram.svg" alt="Instagram Logo"></a>
+            <a href="#"><img src="img/youtube-logotype.svg" alt="Youtube Logo"></a>
+            <a href="#"><img src="img/linkedin.svg" alt="Linkedin Logo"></a>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jump.js@1.0.2/dist/jump.min.js"></script>
+<script src="scripts.js"></script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+
+  var x, i, j, temp;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") temp = "all";
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+  var textContainer=document.getElementById("text-holder");
+  var j=textContainer.getElementsByClassName("filterDiv");
+  for (i = 1; i < j.length; i++) {
+    if (temp == "all") {
+        w3RemoveClass(j[i], "show");
+    }
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    // current[i-1].className = current[i-1].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>    
+</body>
+</html>
