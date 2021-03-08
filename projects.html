@@ -12,17 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" /> 
     <link rel="stylesheet" href="css/main.css">
     <style>
-        .btn2 {
-            background: transparent;
-            border: none;
-            outline: 0;
-            color: yellow;
-        }
-        
-        .btn2 .active {
-            background-color: red;
-            color: blue;
-        }
+        .btn2:active, 
+.btn2:target {
+  color: $white;
+  background-color: $darkOrange;
+  border-color: $darkOrange;
+}
     </style>
 </head>
 <body>
@@ -702,18 +697,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("filterContainer");
-var btns2 = btnContainer.getElementsByClassName("btn2");
-for (var i = 0; i < btns2.length; i++) {
-  btns2[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  if (current.length > 0) { 
-    current[0].className = current[0].className.replace(" active", "");
-  }
-  this.className += " active";
-  });
-}
+
   </script>    
 </body>
 </html>
