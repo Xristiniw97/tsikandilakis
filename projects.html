@@ -101,15 +101,15 @@
           </div>
          
          
-         <div id="myBtnContainer">
-           <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
-           <button class="btn" onclick="filterSelection('pharmacies')"> PHARMACIES</button>
-           <button class="btn" onclick="filterSelection('hotelbar')">HOTEL-BAR</button>
-           <button class="btn" onclick="filterSelection('industrialdesign')"> INDUSTRIAL-DESIGN</button>
-           <button class="btn" onclick="filterSelection('residental')"> RESIDENTIAL</button>
-           <button class="btn" onclick="filterSelection('industrialcommercial')"> INDUSTRIAL-COMMERCIAL</button>
-           <button class="btn" onclick="filterSelection('shopsofficies')"> SHOPS - OFFICIES</button>
-           <button class="btn" onclick="filterSelection('publicsector')"> PUBLIC SECTOR</button>
+         <div id="filterContainer">
+           <button class="btn2 active" onclick="filterSelection('all')"> SHOW ALL</button>
+           <button class="btn2" onclick="filterSelection('pharmacies')"> PHARMACIES</button>
+           <button class="btn2" onclick="filterSelection('hotelbar')">HOTEL-BAR</button>
+           <button class="btn2" onclick="filterSelection('industrialdesign')"> INDUSTRIAL-DESIGN</button>
+           <button class="btn2" onclick="filterSelection('residental')"> RESIDENTIAL</button>
+           <button class="btn2" onclick="filterSelection('industrialcommercial')"> INDUSTRIAL-COMMERCIAL</button>
+           <button class="btn2" onclick="filterSelection('shopsofficies')"> SHOPS - OFFICIES</button>
+           <button class="btn2" onclick="filterSelection('publicsector')"> PUBLIC SECTOR</button>
          </div>
          
          <div class="filterDiv pharmacies">
@@ -690,14 +690,15 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
+var btnContainer = document.getElementById("filterContainer");
+var btns2 = btnContainer.getElementsByClassName("btn2");
+for (var i = 0; i < btns2.length; i++) {
+  btns2[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
     current[0].className = current[0].className.replace(" active", "");
-    // current[i-1].className = current[i-1].className.replace(" active", "");
-    this.className += " active";
+  }
+  this.className += " active";
   });
 }
   </script>    
