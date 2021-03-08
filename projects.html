@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <style>
        .btn2:active {
-                backgroung: black !important;
+                background: black !important;
             color: white !important;
         
         }
@@ -694,6 +694,19 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
+}
+    
+    // Add active class to the current button (highlight it)
+var header2 = document.getElementById("filterContainer");
+var btns2 = header2.getElementsByClassName("btn2");
+for (var i = 0; i < btns2.length; i++) {
+  btns2[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
 }
 
 
