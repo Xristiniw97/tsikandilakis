@@ -693,7 +693,7 @@ function w3RemoveClass(element, name) {
 var containerFilter = document.getElementById("filterContainer");
 var btns = containerFilter.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btn[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");
   if (current.length > 0) { 
     current[0].className = current[0].className.replace(" active", "");
